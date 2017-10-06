@@ -14,13 +14,13 @@ echo '<hr>';
 
 //2)
 $date =  date('Y/m/d', time());
-echo "The value of \$date: ".$date.'<br>';
+echo " 2) The value of \$date: ".$date.'<br>';
 echo '<hr>';
 
 //3)
 $t = strcmp($date,$tar);
 if ($t > "0") {
-    echo "The Future" ;
+    echo " 3) Comparison:   The Future" ;
 } elseif ($t > "0") {
     echo "The Past" ;
 } elseif ($t = "0") { 
@@ -31,31 +31,32 @@ echo '<hr>';
 //4)
 $sym = strpos($date, "/");
 $sym2 = strpos($date, "/", $sym + 1);
-echo "The positions of / are: $sym  $sym2".'<br>';
+echo " 4) The positions of / are: $sym  $sym2".'<br>';
 echo '<hr>';
 
 //5)
-echo "The number of words in \$date is: ".str_word_count("$date").'<br>';
+echo " 5) The number of words in \$date is: ".str_word_count("$date").'<br>';
 echo '<hr>';
 
 //6)
-echo "The length of the string \$date is: ".strlen($date)."<br>";
+echo " 6) The length of the string \$date is: ".strlen($date)."<br>";
 echo '<hr>';
 
 //7)
-echo "ASCII value of the first character of the \$date is: ".ord($date)."<br>";
+echo " 7) ASCII value of the first character of the \$date is: ".ord($date)."<br>";
 echo '<hr>';
 
 //8)
-echo "The last two characters in \$date is: ".substr($date,8)."<br>";
+echo " 8) The last two characters in \$date is: ".substr($date,8)."<br>";
 echo '<hr>';
 
 //9)
-echo "Break \$date into an array and set 'separator' parameter as '/' and delimit all elements with space: ";
+echo " 9) Break \$date into an array and set 'separator' parameter as '/' and delimit all elements with space: "."<br>";
 print_r (explode("/",$date));
 echo '<hr>';
 
 //10)
+echo " 10) Done by using foreach and then for loop, swtich statement and delimit: "."<br>";
  foreach($year as $value)
  {
     for($i=0; $i <1 ; $i++)
@@ -63,11 +64,11 @@ echo '<hr>';
        switch ($value)
           {
         case(($value%4 == 0) and ($value%100!= 0) or ($value%400)==0):
-           echo $value. ": True"."<br>" ;
+           echo $value. ": True ";
            break;
         
         default:
-           echo $value.": False"."<br>";
+           echo $value.": False ";
            break;
            }
  
@@ -75,5 +76,77 @@ echo '<hr>';
      }
 
 }
+echo '<hr>';
+
+//11)
+echo "<br> 11) Using switch statement: ";
+for ($i=0;$i<count($year);$i++)
+
+{echo "<br>";
+switch ($year{$i})
+{
+case "2012": if(((int)$year[$i])%4==0)
+{
+echo "<br>True";
+}
+else
+{
+echo "<br>False";
+}
+
+break;
+case "396": if(((int)$year[$i])%4==0)
+{
+echo "<br>True";
+}
+else
+{
+echo "<br>False";
+}
+
+break;
+case "300": if(((int)$year[$i])%4==0)
+{
+echo "<br>True";
+}
+else
+{
+echo "<br>False";
+}
+
+break;
+case "2000": if(((int)$year[$i])%4==0)
+{
+echo "<br>True";
+}
+else
+{
+echo "<br>False";
+}
+
+break;
+case "1089": if(((int)$year[$i])%4==0)
+{
+echo "<br>True";
+}
+else
+{
+echo "<br>False";
+}
+
+break;
+case "1100": if(((int)$year[$i])%4==0)
+{
+echo "<br>True";
+}
+else
+{
+echo "<br>False";
+}
+
+break;
+}
+}
+
 
 ?>
