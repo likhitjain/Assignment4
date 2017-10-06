@@ -82,71 +82,72 @@ echo '<hr>';
 echo "<br> 11) Using switch statement: ";
 for ($i=0;$i<count($year);$i++)
 
-{echo "<br>";
+{
 switch ($year{$i})
 {
 case "2012": if(((int)$year[$i])%4==0)
 {
-echo "<br>True";
+echo "True ";
 }
 else
 {
-echo "<br>False";
+echo "False ";
 }
 
 break;
 case "396": if(((int)$year[$i])%4==0)
 {
-echo "<br>True";
+echo "True ";
 }
 else
 {
-echo "<br>False";
+echo "False ";
 }
 
 break;
 case "300": if(((int)$year[$i])%4==0)
 {
-echo "<br>True";
+echo "True ";
 }
 else
 {
-echo "<br>False";
+echo "False ";
 }
 
 break;
 case "2000": if(((int)$year[$i])%4==0)
 {
-echo "<br>True";
+echo "True ";
 }
 else
 {
-echo "<br>False";
+echo "False ";
 }
 
 break;
 case "1089": if(((int)$year[$i])%4==0)
 {
-echo "<br>True";
+echo "True ";
 }
 else
 {
-echo "<br>False";
+echo "False ";
 }
 
 break;
 case "1100": if(((int)$year[$i])%4==0)
 {
-echo "<br>True";
+echo "True ";
 }
 else
 {
-echo "<br>False";
+echo "False ";
 }
 
 break;
 }
 }
+
 
 
 ?>
